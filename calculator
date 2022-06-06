@@ -1,0 +1,23 @@
+# калькулятор
+print("Простой калькулятор на Python")
+
+while True:
+    symbol = input('Введите мат.знак: +, -, *, /: ')
+    if symbol == '0':
+         break
+    if symbol in ('+', '-', '*', '/'):
+        first_number = float(input('Введите первое число: '))
+        second_number = float(input('Введите второе число: '))
+        if symbol == '+':
+            print(first_number + second_number)
+        elif symbol == '-':
+            print(first_number - second_number)
+        elif symbol == '*':
+            print(first_number * second_number)
+        elif symbol == '/':
+            if second_number != 0:
+                print(first_number / second_number)
+            else:
+                print('Деление на ноль!')
+
+
